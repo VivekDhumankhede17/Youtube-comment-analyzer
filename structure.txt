@@ -1,0 +1,17 @@
+## 📁 Project Structure
+
+```
+Youtube-comment-analyzer/
+│
+├── backend/
+│   └── app.py              # Flask server — API routes & sentiment logic
+│
+├── frontend/
+│   ├── index.html          # Main web UI
+│   ├── style.css           # Styling
+│   └── main.js             # Frontend JavaScript logic
+│
+├── requirements.txt        # Python dependencies
+├── runtime.txt             # Python version (for deployment)
+├── vercel.json             # Vercel deployment config
+└── README.md               # This file
