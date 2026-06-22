@@ -1,0 +1,65 @@
+## 🚀 Getting Started (Clone & Run)
+
+### Step 1 — Clone the Repository
+
+```bash
+git clone https://github.com/VivekDhumankhede17/Youtube-comment-analyzer.git
+cd Youtube-comment-analyzer
+```
+
+---
+
+### Step 2 — Create a Virtual Environment
+
+**Windows (PowerShell):**
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+> ⚠️ If you see a script execution error, run this once and retry:
+> ```powershell
+> Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+> ```
+
+**macOS / Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+### Step 3 — Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+This installs:
+- `flask` — web server
+- `flask-cors` — cross-origin support
+- `google-api-python-client` — YouTube API
+- `vaderSentiment` — sentiment analysis
+- `matplotlib` — chart generation
+
+---
+
+### Step 4 — Get a YouTube Data API Key (Free)
+
+1. Go to [Google Cloud Console](https://console.cloud.google.com/)
+2. Click **"Select a project"** → **"New Project"** → give it a name → **Create**
+3. In the left menu go to **APIs & Services** → **Library**
+4. Search for **"YouTube Data API v3"** → Click it → Click **Enable**
+5. Go to **APIs & Services** → **Credentials** → **+ Create Credentials** → **API Key**
+6. Copy the generated API key — you'll paste it into the app
+
+> 💡 The free tier gives you **10,000 units/day** which is more than enough for testing.
+
+---
+
+### Step 5 — Run the Application
+
+```bash
+cd backend
+python app.py
